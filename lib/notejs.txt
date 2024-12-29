@@ -1,0 +1,21 @@
+
+
+// lấy tên trung trên wiki
+
+const listItems = document.querySelectorAll('#listName li');
+
+ text = ''
+listItems.forEach(item => {
+  const dataNcn = item.getAttribute('data-ncn');
+  text += dataNcn +'\n'
+});console.log(text);
+
+
+// lấy tên trung trên việt
+const listItems = document.querySelectorAll('#listName li');
+
+ text = ''
+listItems.forEach(item => {
+  const dataNcn = item.getAttribute('data-nvi');
+  text += dataNcn +'\n'
+});console.log(text);
